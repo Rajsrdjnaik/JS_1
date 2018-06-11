@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	var myObject = new Object();
+myObject.myProp = "my prop value";
+myObject.myMethod = function() {
+   console.log('hello')
+}
+
+var myObject = {
+  myProp: "my prop value",
+  myMethod: function() {
+    console.log('hello')
+  }
+}
+
+
+
+function myObject() {
+  this.myProp = "my prop value";
+}
+myObject.prototype.myMethod = function() {
+    console.log('hello')
+}
+var newObject = new myObject();
+
+
+
+myObject.myMethod()
+</script>
+</body>
+</html>

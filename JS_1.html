@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+//---------recipe-----------//
+
+var reci = {
+	'title' : 'Mole',
+	'servings' : 2 ,
+	'ingredients' : ['cinnamon', 'cumin', 'cocoa']
+}
+
+console.log('Title :'+reci.title);
+console.log('Servings :'+reci.servings)
+console.log('Ingrdients :\n')
+for(var i=0;i<reci.ingredients.length;i++){
+	console.log(reci.ingredients[i])
+}
+
+//-------books------------//
+
+var books = [
+{
+	title: 'The Hobbit',
+	author: 'J.R.R. Tolkein',
+	alreadyRead: true
+},
+{   
+	title: 'The lord of the rings',
+	author: 'J.R.R. Tolkein',
+	alreadyRead: false
+}];
+
+for (var i = 0; i < books.length; i++) {
+	var bookInfo = books[i].title + '" by ' + books[i].author;
+	if (books.alreadyRead) {
+		console.log('You already read "' + bookInfo);
+	} 
+	else {
+		console.log('You still need to read "' + bookInfo);
+	}
+}
+</script>
+</body>
+</html>
